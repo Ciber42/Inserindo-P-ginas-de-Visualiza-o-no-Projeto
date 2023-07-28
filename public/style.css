@@ -1,0 +1,58 @@
+.btn-container {
+  text-align: center;
+  margin-top: 20px;
+}
+ body {
+  font-family: 'Arial', sans-serif;
+}
+
+    body {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+}
+
+a {
+  color: #0066cc;
+}
+
+a:hover {
+  color: #0099ff;
+}
+.contato-rodape {
+      position:relative;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      background-color: #f0f0f0;
+      padding: 10px;
+    }
+    button[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      display: block;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;}
+      h2 {
+      text-align: center;
+      font-weight: bold;
+    }
+    #form {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    #lista-mangas {
+      max-width: 400px;
+      margin: 0 auto;
+    }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consulta de Mangás</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>⛩️Brechó de Mangás Usados⛩️</h1>
+  <br><br>
+  <h2>Consulta de Mangás</h2>
+  
+  <br>
+  <form action="/consulta" method="GET">
+    <label for="search">Buscar Mangá por Nome:</label>
+    <input type="text" id="search" name="search" placeholder="Digite o nome do mangá">
+    <button type="submit">Buscar</button>
+  </form>
+
+  <% if (mangas.length > 0) { %>
+    <ul>
+      <% mangas.forEach(manga => { %>
+        <li><strong>Nome:</strong> <%= manga.nome %></li>
+        <li><strong>Autor:</strong> <%= manga.autor %></li>
+        <li><strong>Preço:</strong> <%= manga.preco %></li>
+        <li><strong>Gênero:</strong> <%= manga.genero %></li>
+        <br>
+      <% }); %>
+    </ul>
+  <% } else { %>
+    <p>Nenhum mangá cadastrado ainda.</p>
+  <% } %>
+  
+  <a href="/" class="btn btn-home">
+    <img src="casa.png" alt="Página Inicial" width="100" height="100">
+  </a>
+
+<br>
+</body>
+</html>
